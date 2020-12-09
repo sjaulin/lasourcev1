@@ -1,0 +1,33 @@
+/*
+Theme Name: La Source
+Template: wp-bootstrap-starter
+Author: Stéphane Jaulin
+Version: 0.1
+*/
+
+body {
+    margin-top: 0 !important;
+}
+
+#wpadminbar {
+    position: absolute;
+}
+
+.navbar-brand {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand .icon {
+    display: none;
+}
+
+#footer-widget {
+    background-image: url("img/bg_footer.png");
+}
+
+.footer-widget-3 img {
+    margin: 0 15px 15px 0;
+}
