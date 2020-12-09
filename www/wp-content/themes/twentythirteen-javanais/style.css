@@ -1,0 +1,65 @@
+/*
+Theme Name: Javanais
+Template: twentythirteen
+Author: Stéphane Jaulin
+Version: 0.1
+*/
+header .site-logo {
+   max-width: 1080px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+}
+
+.site-footer .widget {
+    width: auto;
+}
+
+.site-footer .widget a {
+   color: white;
+}
+
+.site-footer .widget img.logo.alignnone {
+    margin: 10px;
+}
+
+/* Html */
+.entry-header, .entry-content, .entry-summary, .entry-meta {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #54B6C5;
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+    background-color: #220e10;
+    color: #fff;
+}
+
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus {
+    background-color: darkgrey;
+    color: #fff;
+}
+
+.hentry {
+    padding: 0;
+}
+
+.site-footer .widget-area {
+    overflow: hidden;
+}
+
+/* Bloc */
+.wp-block-media-text .wp-block-media-text__content {
+    grid-area: media-text-content;
+    padding: 0 3%;
+    word-break: break-word;
+}
+
+/* Home */
+body.home .entry-title {
+    display: none;
+}
