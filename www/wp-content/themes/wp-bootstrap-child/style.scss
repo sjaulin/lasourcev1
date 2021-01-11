@@ -1,0 +1,119 @@
+/*
+Theme Name: La Source
+Template: wp-bootstrap-starter
+Author: Stéphane Jaulin
+Version: 0.1
+*/
+
+/* 
+Import from Bootstrap v4.5.3 (https://getbootstrap.com/
+*/
+$link-color: #ffffff;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+body {
+  margin-top: 0 !important;
+  font-family: "Lato", sans-serif;
+  //font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.25em;
+
+  #wpadminbar {
+    position: absolute;
+  }
+
+  .top_logo {
+    @include media-breakpoint-up(md) {
+      padding: 10px 0;
+    }
+
+    .icon {
+      img {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .navbar {
+    background-color: #37576e;
+    padding: 10px 0;
+    @include media-breakpoint-up(lg) {
+      opacity: 0.9;
+    }
+
+    .container {
+      padding: 0 15px;
+
+      .navbar-brand {
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 131px;
+        height: 60px;
+
+        img {
+          @include media-breakpoint-up(md) {
+            display: none;
+          }
+        }
+      }
+
+      ul.navbar-nav {
+        li.menu-item {
+          a.nav-link {
+            color: $link-color;
+            :hover,
+            :visited {
+              text-decoration: underline;
+              color: $link-color;
+              background-color: #fff;
+            }
+          }
+
+          a.dropdown-item.active,
+          a.dropdown-item:active {
+            color: #212529;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &.home {
+    #page {
+      @include media-breakpoint-up(lg) {
+        margin-top: -75px;
+      }
+    }
+  }
+
+  #page {
+    .slider_container {
+      background-color: #37576e;
+      opacity: 0.9;
+
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+
+    .site-content {
+      padding-top: 15px;
+    }
+
+    h1.entry-title {
+    }
+  }
+
+  #footer-widget {
+    background-image: url("img/bg_footer.png");
+  }
+}

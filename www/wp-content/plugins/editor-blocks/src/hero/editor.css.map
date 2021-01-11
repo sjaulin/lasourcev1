@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,4BAA4B,CAAC,cAAc;AAC3C,4BAA4B,CAAC,WAAW,CAAE;EACzC,aAAa,EAAE,GAAG;CAClB",
+    "sources": [
+        "editor.scss"
+    ],
+    "names": [],
+    "file": "editor.css"
+}

@@ -2,6 +2,8 @@ wp-config.php
 
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
+wp-admin/
+
 wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/

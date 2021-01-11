@@ -1,0 +1,10 @@
+.ub_progress_bar_value {
+  padding-left: 5px;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.ub_progress_bar_value button {
+  display: none;
+}
+/*# sourceMappingURL=editor.css.map */

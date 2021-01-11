@@ -1,0 +1,101 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.ub-hide {
+  display: none !important;
+}
+
+.ub_table-of-contents {
+  background-color: #fafafa;
+  border: 1px solid #dfdfdf;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.ub_table-of-contents ul,
+.ub_table-of-contents ol {
+  margin-bottom: 0;
+  margin-left: 1.3em;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.ub_table-of-contents ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+.ub_table-of-contents ol > li {
+  display: table;
+  counter-increment: item;
+}
+
+.ub_table-of-contents ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;
+}
+
+.ub_table-of-contents li ol > li {
+  margin: 0;
+}
+
+.ub_table-of-contents li ol > li:before {
+  content: counters(item, ".") " ";
+}
+
+.ub_table-of-contents-header {
+  text-align: center;
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-weight: 500;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: fit-content(90%) auto;
+      grid-template-columns: fit-content(90%) auto;
+}
+
+#ub_table-of-contents-header-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ub_table-of-contents-1-column {
+  -webkit-column-count: 1;
+          column-count: 1;
+}
+
+.ub_table-of-contents-2-column {
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+.ub_table-of-contents-3-column {
+  -webkit-column-count: 3;
+          column-count: 3;
+}
+
+.ub_table-of-contents-container {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .ub_table-of-contents-1-column,
+  .ub_table-of-contents-2-column,
+  .ub_table-of-contents-3-column {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

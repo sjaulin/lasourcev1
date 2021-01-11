@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA;;;;;EAKE;AASF,AAAA,QAAQ,CAAC;EACR,OAAO,EAAC,eAAe;CACvB;;ADdD,AACC,sBADqB,CAAC,qBAAqB,CAC3C,EAAE,CAAC;EACF,YAAY,EAAE,KAAK;CACnB;;AAGF,AAAA,uBAAuB,AAAA,WAAW,CAAC;EAClC,GAAG,EAAE,GAAG;EACR,SAAS,EAAE,gBAAgB;CAC3B;;AAED,AAAA,sBAAsB,CAAC;EACtB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;CACnB",
+    "sources": [
+        "editor.scss",
+        "../../common.scss"
+    ],
+    "names": [],
+    "file": "editor.css"
+}

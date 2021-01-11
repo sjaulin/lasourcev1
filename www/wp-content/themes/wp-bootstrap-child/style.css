@@ -1,33 +1,103 @@
+@charset "UTF-8";
 /*
 Theme Name: La Source
 Template: wp-bootstrap-starter
 Author: Stéphane Jaulin
 Version: 0.1
 */
-
+/* 
+Import from Bootstrap v4.5.3 (https://getbootstrap.com/
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&&display=swap");
 body {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25em;
 }
 
-#wpadminbar {
-    position: absolute;
+body #wpadminbar {
+  position: absolute;
 }
 
-.navbar-brand {
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
+@media (min-width: 768px) {
+  body .top_logo {
+    padding: 10px 0;
+  }
 }
 
-.navbar-brand .icon {
+@media (max-width: 767.98px) {
+  body .top_logo .icon img {
     display: none;
+  }
 }
 
-#footer-widget {
-    background-image: url("img/bg_footer.png");
+body .navbar {
+  background-color: #37576e;
+  padding: 10px 0;
 }
 
-.footer-widget-3 img {
-    margin: 0 15px 15px 0;
+@media (min-width: 992px) {
+  body .navbar {
+    opacity: 0.9;
+  }
 }
+
+body .navbar .container {
+  padding: 0 15px;
+}
+
+body .navbar .container .navbar-brand {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 131px;
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  body .navbar .container .navbar-brand img {
+    display: none;
+  }
+}
+
+body .navbar .container ul.navbar-nav li.menu-item a.nav-link {
+  color: #ffffff;
+}
+
+body .navbar .container ul.navbar-nav li.menu-item a.nav-link :hover,
+body .navbar .container ul.navbar-nav li.menu-item a.nav-link :visited {
+  text-decoration: underline;
+  color: #ffffff;
+  background-color: #fff;
+}
+
+body .navbar .container ul.navbar-nav li.menu-item a.dropdown-item.active,
+body .navbar .container ul.navbar-nav li.menu-item a.dropdown-item:active {
+  color: #212529;
+  background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  body.home #page {
+    margin-top: -75px;
+  }
+}
+
+body #page .slider_container {
+  background-color: #37576e;
+  opacity: 0.9;
+}
+
+body #page .slider_container .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+body #page .site-content {
+  padding-top: 15px;
+}
+
+body #footer-widget {
+  background-image: url("img/bg_footer.png");
+}
+/*# sourceMappingURL=style.css.map */

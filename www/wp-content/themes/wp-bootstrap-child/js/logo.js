@@ -1,11 +1,22 @@
 jQuery(window).scroll( function() {
-    const element = document.querySelector('.navbar-brand .icon');
-    if( jQuery(this).scrollTop() < 150 ) {
-        jQuery(".navbar-brand .icon").hide();
-    }
-    else {
-        jQuery(".navbar-brand .icon").show();
-        element.classList.add('animate__animated', 'animate__zoomIn');
-        element.style.setProperty('--animate-duration', '5s');
+    if (jQuery(window).width() >= 768) {
+
+        const element = document.querySelector('.navbar-brand img');
+
+        if( jQuery(this).scrollTop() < 150) {
+            jQuery(".navbar-brand img").hide();
+    
+            jQuery(".navbar").addClass('light');
+            jQuery(".navbar").removeClass('dark');
+        }
+        else {
+            jQuery(".navbar-brand img").show();
+    
+            jQuery(".navbar").addClass('dark');
+            jQuery(".navbar").removeClass('light');
+    
+            element.classList.add('animate__animated', 'animate__zoomIn');
+            element.style.setProperty('--animate-duration', '0.5s');
+        }
     }
 });
