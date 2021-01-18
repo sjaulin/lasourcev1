@@ -9,6 +9,7 @@ Version: 0.1
 Import from Bootstrap v4.5.3 (https://getbootstrap.com/
 */
 $link-color: #ffffff;
+$background-color: #37576e;
 
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -41,7 +42,7 @@ body {
   }
 
   .navbar {
-    background-color: #37576e;
+    background-color: $background-color;
     padding: 10px 0;
     @include media-breakpoint-up(lg) {
       opacity: 0.9;
@@ -91,12 +92,24 @@ body {
       @include media-breakpoint-up(lg) {
         margin-top: -75px;
       }
+      // Facebook
+      .cff-wrapper {
+        font-size: 0.8em;
+        a,
+        a:hover {
+          color: #212529;
+          text-decoration: none;
+        }
+        .cff-likebox {
+          display: none;
+        }
+      }
     }
   }
 
   #page {
     .slider_container {
-      background-color: #37576e;
+      background-color: $background-color;
       opacity: 0.9;
 
       .container {
@@ -107,13 +120,35 @@ body {
 
     .site-content {
       padding-top: 15px;
+
+      #footer-widget {
+        background-color: $background-color;
+        color: #fff;
+        font-size: 0.8em;
+
+        .footer-widget-3 {
+          img {
+            padding: 5px;
+          }
+        }
+      }
+
+      footer#colophon {
+        background-color: $background-color;
+        color: #fff;
+        a {
+          color: $link-color;
+          :hover,
+          :visited {
+            text-decoration: underline;
+            color: $link-color;
+            background-color: #fff;
+          }
+        }
+      }
     }
 
     h1.entry-title {
     }
-  }
-
-  #footer-widget {
-    background-image: url("img/bg_footer.png");
   }
 }

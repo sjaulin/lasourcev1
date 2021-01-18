@@ -6,7 +6,7 @@ if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_
 
     <div id="footer-widget">
 
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="row">
 
