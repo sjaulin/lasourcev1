@@ -42,11 +42,11 @@ body .navbar {
   }
 }
 
-body .navbar .container {
-  padding: 0 15px;
+body .navbar .navbar-toggler {
+  margin-top: 10px;
 }
 
-body .navbar .container .navbar-brand {
+body .navbar .navbar-brand {
   margin: 0;
   padding: 0;
   display: block;
@@ -55,31 +55,36 @@ body .navbar .container .navbar-brand {
 }
 
 @media (min-width: 768px) {
-  body .navbar .container .navbar-brand img {
+  body .navbar .navbar-brand {
     display: none;
   }
 }
 
-body .navbar .container ul.navbar-nav li.menu-item a.nav-link {
+body .navbar .navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+body .navbar ul.navbar-nav li.menu-item a.nav-link {
   color: #ffffff;
 }
 
-body .navbar .container ul.navbar-nav li.menu-item a.nav-link :hover,
-body .navbar .container ul.navbar-nav li.menu-item a.nav-link :visited {
+body .navbar ul.navbar-nav li.menu-item a.nav-link :hover,
+body .navbar ul.navbar-nav li.menu-item a.nav-link :visited {
   text-decoration: underline;
   color: #ffffff;
   background-color: #fff;
+  font-weight: normal;
 }
 
-body .navbar .container ul.navbar-nav li.menu-item a.dropdown-item.active,
-body .navbar .container ul.navbar-nav li.menu-item a.dropdown-item:active {
+body .navbar ul.navbar-nav li.menu-item a.dropdown-item.active,
+body .navbar ul.navbar-nav li.menu-item a.dropdown-item:active {
   color: #212529;
   background-color: #fff;
 }
 
 @media (min-width: 992px) {
   body.home #page {
-    margin-top: -75px;
+    margin-top: -66px;
   }
 }
 

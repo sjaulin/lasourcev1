@@ -29,6 +29,9 @@
 
 <body <?php body_class(); ?>>
 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v10.0" nonce="VayEj9sI"></script>
+
     <?php
 
     // WordPress 5.2 wp_body_open implementation
@@ -45,7 +48,7 @@
     </div>
 
     <nav class="navbar navbar-dark navbar-expand-lg sticky-top" role="navigation">
-        <div class="container">
+        <div class="text-center mx-auto">
 
             <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/h60/white-white.png" /></a>
 

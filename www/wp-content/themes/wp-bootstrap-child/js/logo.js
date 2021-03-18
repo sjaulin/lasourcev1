@@ -1,16 +1,16 @@
 jQuery(window).scroll( function() {
     if (jQuery(window).width() >= 768) {
 
-        const element = document.querySelector('.navbar-brand img');
+        const element = document.querySelector('.navbar-brand');
 
         if( jQuery(this).scrollTop() < 150) {
-            jQuery(".navbar-brand img").hide();
+            jQuery(".navbar-brand").hide();
     
             jQuery(".navbar").addClass('light');
             jQuery(".navbar").removeClass('dark');
         }
         else {
-            jQuery(".navbar-brand img").show();
+            jQuery(".navbar-brand").show();
     
             jQuery(".navbar").addClass('dark');
             jQuery(".navbar").removeClass('light');
